@@ -1,0 +1,2915 @@
+/* ===========================
+   GOOGLE FONT
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+
+/* ===========================
+   BACKGROUND
+=========================== */
+
+.stApp{
+
+background:linear-gradient(
+135deg,
+#07111F,
+#081C2F,
+#0B243B,
+#06111F
+);
+
+background-size:400% 400%;
+
+animation:bgmove 18s ease infinite;
+
+color:white;
+
+font-family:'Inter',sans-serif;
+
+}
+
+
+@keyframes bgmove{
+
+0%{
+
+background-position:0% 50%;
+
+}
+
+50%{
+
+background-position:100% 50%;
+
+}
+
+100%{
+
+background-position:0% 50%;
+
+}
+
+}
+
+
+/* ===========================
+   HERO TITLE
+=========================== */
+
+.hero-title{
+
+text-align:center;
+
+padding:35px;
+
+margin-bottom:25px;
+
+border-radius:22px;
+
+background:rgba(15,23,42,.75);
+
+backdrop-filter:blur(18px);
+
+border:1px solid rgba(0,255,157,.25);
+
+box-shadow:0px 0px 40px rgba(0,255,157,.18);
+
+}
+
+
+.hero-title h1{
+
+font-size:60px;
+
+font-family:'Orbitron',sans-serif;
+
+color:#00FF9D;
+
+letter-spacing:5px;
+
+margin-bottom:8px;
+
+text-shadow:0px 0px 20px rgba(0,255,157,.7);
+
+}
+
+
+.hero-title h3{
+
+font-size:24px;
+
+font-weight:500;
+
+color:white;
+
+}
+
+
+.hero-title p{
+
+color:#B6C7D6;
+
+font-size:16px;
+
+}
+
+
+/* ===========================
+   KPI CARDS
+=========================== */
+
+.metric-card{
+
+background:rgba(17,24,39,.82);
+
+border-radius:20px;
+
+padding:20px;
+
+text-align:center;
+
+border:1px solid rgba(0,255,157,.2);
+
+box-shadow:0px 0px 20px rgba(0,255,157,.12);
+
+transition:.35s;
+
+}
+
+
+.metric-card:hover{
+
+transform:translateY(-6px);
+
+box-shadow:0px 0px 35px rgba(0,255,157,.35);
+
+}
+
+
+.metric-title{
+
+font-size:15px;
+
+color:#9FB4C8;
+
+letter-spacing:1px;
+
+}
+
+
+.metric-value{
+
+font-size:38px;
+
+font-weight:700;
+
+color:white;
+
+margin-top:12px;
+
+}
+
+
+/* ===========================
+   PLAYER CARDS
+=========================== */
+
+.player-card{
+
+background:rgba(15,23,42,.82);
+
+padding:22px;
+
+border-radius:18px;
+
+text-align:center;
+
+border-left:6px solid #00FF9D;
+
+transition:.35s;
+
+}
+
+
+.player-card:hover{
+
+transform:scale(1.03);
+
+}
+
+
+/* ===========================
+   COMMENTARY
+=========================== */
+
+.commentary-card{
+
+background:#111827;
+
+padding:18px;
+
+margin-bottom:15px;
+
+border-radius:18px;
+
+border-left:6px solid #00FF9D;
+
+box-shadow:0px 0px 18px rgba(0,255,157,.15);
+
+transition:.3s;
+
+}
+
+
+.commentary-card:hover{
+
+transform:translateX(6px);
+
+box-shadow:0px 0px 28px rgba(0,255,157,.4);
+
+}
+
+
+/* ===========================
+   PIPELINE
+=========================== */
+
+.pipeline-card{
+
+background:#161B22;
+
+padding:22px;
+
+border-radius:18px;
+
+border-left:6px solid #00FF9D;
+
+box-shadow:0px 0px 20px rgba(0,255,157,.15);
+
+transition:.3s;
+
+}
+
+
+.pipeline-card:hover{
+
+transform:translateY(-5px);
+
+box-shadow:0px 0px 35px rgba(0,255,157,.35);
+
+}
+
+
+/* ===========================
+   SCOREBOARD
+=========================== */
+
+.scoreboard{
+
+background:linear-gradient(
+90deg,
+#0F172A,
+#111827,
+#1E293B
+);
+
+padding:28px;
+
+border-radius:24px;
+
+border:2px solid #00FF9D;
+
+box-shadow:0px 0px 45px rgba(0,255,157,.3);
+
+animation:pulse 3s infinite;
+
+margin-bottom:30px;
+
+}
+
+
+.scoreboard h1{
+
+font-size:38px;
+
+font-family:'Orbitron',sans-serif;
+
+color:white;
+
+text-align:center;
+
+}
+
+
+@keyframes pulse{
+
+0%{
+
+box-shadow:0px 0px 20px rgba(0,255,157,.18);
+
+}
+
+50%{
+
+box-shadow:0px 0px 50px rgba(0,255,157,.45);
+
+}
+
+100%{
+
+box-shadow:0px 0px 20px rgba(0,255,157,.18);
+
+}
+
+}
+
+
+/* ===========================
+   SIDEBAR
+=========================== */
+
+section[data-testid="stSidebar"]{
+
+background:#08131F;
+
+border-right:2px solid rgba(0,255,157,.2);
+
+}
+
+
+/* ===========================
+   DATAFRAME
+=========================== */
+
+[data-testid="stDataFrame"]{
+
+border-radius:18px;
+
+overflow:hidden;
+
+}
+
+
+/* ===========================
+   BUTTONS
+=========================== */
+
+.stButton button{
+
+background:#00FF9D;
+
+color:black;
+
+font-weight:bold;
+
+border-radius:12px;
+
+border:none;
+
+}
+
+
+.stButton button:hover{
+
+background:white;
+
+}
+
+
+/* ===========================
+   SCROLLBAR
+=========================== */
+
+::-webkit-scrollbar{
+
+width:10px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:#00FF9D;
+
+border-radius:20px;
+
+}
+/* =========================================================
+   OVERPULSE — PREMIUM HEADER
+   ========================================================= */
+
+.op-header {
+    width: 100%;
+    min-height: 118px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 24px 34px;
+
+    margin-bottom: 28px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(25, 28, 39, 0.96),
+            rgba(15, 18, 27, 0.98)
+        );
+
+    border: 1px solid rgba(255, 255, 255, 0.07);
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 18px 45px rgba(0, 0, 0, 0.28),
+        inset 0 1px 0 rgba(255, 255, 255, 0.035);
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+/* ---------------------------------------------------------
+   HEADER LIGHT EFFECT
+   --------------------------------------------------------- */
+
+.op-header::before {
+    content: "";
+
+    position: absolute;
+
+    top: -120px;
+    left: 15%;
+
+    width: 420px;
+    height: 220px;
+
+    background: radial-gradient(
+        circle,
+        rgba(138, 92, 246, 0.13),
+        transparent 70%
+    );
+
+    pointer-events: none;
+}
+
+
+/* ---------------------------------------------------------
+   LEFT SIDE
+   --------------------------------------------------------- */
+
+.op-header-left {
+    position: relative;
+    z-index: 2;
+}
+
+
+/* ---------------------------------------------------------
+   BRAND ROW
+   --------------------------------------------------------- */
+
+.op-brand-row {
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+}
+
+
+/* ---------------------------------------------------------
+   CRICKET ICON
+   --------------------------------------------------------- */
+
+.op-brand-icon {
+    width: 46px;
+    height: 46px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 27px;
+
+    border-radius: 14px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(150, 98, 255, 0.20),
+            rgba(90, 55, 180, 0.08)
+        );
+
+    border: 1px solid rgba(167, 119, 255, 0.20);
+
+    box-shadow:
+        0 8px 22px rgba(110, 70, 210, 0.12);
+}
+
+
+/* ---------------------------------------------------------
+   BRAND NAME
+   --------------------------------------------------------- */
+
+.op-brand {
+    font-size: 31px;
+
+    font-weight: 750;
+
+    letter-spacing: -1px;
+
+    color: #f7f7fb;
+
+    line-height: 1;
+}
+
+
+/* ---------------------------------------------------------
+   TAGLINE
+   --------------------------------------------------------- */
+
+.op-tagline {
+    margin-top: 9px;
+
+    margin-left: 59px;
+
+    font-size: 14px;
+
+    font-weight: 450;
+
+    letter-spacing: 0.15px;
+
+    color: rgba(230, 232, 240, 0.58);
+}
+
+
+/* ---------------------------------------------------------
+   MATCH TITLE
+   --------------------------------------------------------- */
+
+.op-header-match {
+    margin-top: 11px;
+
+    margin-left: 59px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    color: rgba(255, 255, 255, 0.82);
+}
+
+
+/* ---------------------------------------------------------
+   RIGHT SIDE
+   --------------------------------------------------------- */
+
+.op-header-right {
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    align-items: center;
+}
+
+
+/* ---------------------------------------------------------
+   LIVE STATUS
+   --------------------------------------------------------- */
+
+.op-live-indicator {
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    padding: 9px 15px;
+
+    border-radius: 999px;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.7px;
+
+    background: rgba(255, 255, 255, 0.045);
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    backdrop-filter: blur(12px);
+}
+
+
+/* ---------------------------------------------------------
+   LIVE DOT
+   --------------------------------------------------------- */
+
+.op-live-dot {
+    font-size: 15px;
+
+    line-height: 1;
+}
+
+
+/* ---------------------------------------------------------
+   LIVE
+   --------------------------------------------------------- */
+
+.op-status-live {
+    color: #76f2ae;
+
+    border-color: rgba(79, 230, 145, 0.22);
+
+    background:
+        rgba(53, 196, 111, 0.07);
+
+    animation: op-live-border 2.4s ease-in-out infinite;
+}
+
+
+.op-status-live .op-live-dot {
+    color: #5df29c;
+
+    text-shadow:
+        0 0 8px rgba(93, 242, 156, 0.85);
+
+    animation: op-live-pulse 1.7s ease-in-out infinite;
+}
+
+
+/* ---------------------------------------------------------
+   READY
+   --------------------------------------------------------- */
+
+.op-status-idle {
+    color: #b9bdca;
+}
+
+
+/* ---------------------------------------------------------
+   COMPLETE
+   --------------------------------------------------------- */
+
+.op-status-complete {
+    color: #c7a7ff;
+
+    border-color: rgba(170, 120, 255, 0.25);
+
+    background:
+        rgba(138, 92, 246, 0.08);
+}
+
+
+.op-status-complete .op-live-dot {
+    color: #aa7cff;
+}
+
+
+/* ---------------------------------------------------------
+   LIVE ANIMATIONS
+   --------------------------------------------------------- */
+
+@keyframes op-live-pulse {
+
+    0% {
+        opacity: 1;
+
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.42;
+
+        transform: scale(0.72);
+    }
+
+    100% {
+        opacity: 1;
+
+        transform: scale(1);
+    }
+}
+
+
+@keyframes op-live-border {
+
+    0% {
+        box-shadow:
+            0 0 0 rgba(93, 242, 156, 0);
+    }
+
+    50% {
+        box-shadow:
+            0 0 18px rgba(93, 242, 156, 0.08);
+    }
+
+    100% {
+        box-shadow:
+            0 0 0 rgba(93, 242, 156, 0);
+    }
+}
+
+
+/* =========================================================
+   RESPONSIVE HEADER
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+    .op-header {
+        padding: 20px;
+
+        min-height: auto;
+
+        align-items: flex-start;
+
+        gap: 20px;
+    }
+
+    .op-brand {
+        font-size: 25px;
+    }
+
+    .op-tagline {
+        margin-left: 0;
+
+        margin-top: 10px;
+
+        max-width: 280px;
+
+        line-height: 1.4;
+    }
+
+    .op-header-match {
+        margin-left: 0;
+    }
+
+    .op-brand-icon {
+        width: 40px;
+        height: 40px;
+
+        font-size: 23px;
+    }
+
+    .op-live-indicator {
+        padding: 8px 11px;
+
+        font-size: 10px;
+    }
+}
+/* =========================================================
+   OVERPULSE — PREMIUM SIDEBAR
+   ========================================================= */
+
+.op-sidebar-brand {
+    padding: 12px 4px 18px;
+    text-align: left;
+}
+
+
+.op-sidebar-logo {
+    width: 46px;
+    height: 46px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 25px;
+
+    border-radius: 14px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(145, 92, 255, 0.20),
+            rgba(80, 45, 170, 0.08)
+        );
+
+    border: 1px solid rgba(167, 119, 255, 0.20);
+
+    margin-bottom: 13px;
+}
+
+
+.op-sidebar-name {
+    font-size: 25px;
+
+    font-weight: 750;
+
+    letter-spacing: -0.7px;
+
+    color: #f5f5fa;
+}
+
+
+.op-sidebar-subtitle {
+    margin-top: 5px;
+
+    font-size: 11px;
+
+    color: rgba(230, 232, 240, 0.48);
+
+    letter-spacing: 0.35px;
+}
+
+
+.op-sidebar-divider {
+    width: 100%;
+
+    height: 1px;
+
+    background:
+        rgba(255, 255, 255, 0.075);
+
+    margin: 20px 0;
+}
+
+
+.op-sidebar-section-title {
+    font-size: 10px;
+
+    font-weight: 750;
+
+    letter-spacing: 1.4px;
+
+    color: rgba(180, 184, 200, 0.60);
+
+    margin-bottom: 12px;
+}
+
+
+/* =========================================================
+   MATCH INFO
+   ========================================================= */
+
+.op-match-info {
+
+    margin-top: 15px;
+
+    padding: 16px;
+
+    border-radius: 14px;
+
+    background:
+        rgba(255, 255, 255, 0.035);
+
+    border:
+        1px solid rgba(255, 255, 255, 0.065);
+
+    transition:
+        border-color 0.25s ease,
+        background 0.25s ease;
+}
+
+
+.op-match-info:hover {
+
+    background:
+        rgba(255, 255, 255, 0.05);
+
+    border-color:
+        rgba(154, 104, 255, 0.22);
+}
+
+
+.op-match-info-title {
+
+    font-size: 9px;
+
+    letter-spacing: 1.2px;
+
+    font-weight: 700;
+
+    color:
+        rgba(180, 184, 200, 0.55);
+
+    margin-bottom: 9px;
+}
+
+
+.op-match-teams {
+
+    font-size: 14px;
+
+    line-height: 1.45;
+
+    font-weight: 650;
+
+    color: #f1f2f7;
+}
+
+
+.op-match-teams span {
+
+    color:
+        rgba(255, 255, 255, 0.35);
+
+    padding:
+        0 5px;
+
+    font-weight: 400;
+}
+
+
+.op-match-meta {
+
+    margin-top: 8px;
+
+    font-size: 10px;
+
+    line-height: 1.4;
+
+    color:
+        rgba(220, 223, 232, 0.48);
+}
+
+
+/* =========================================================
+   REPLAY STATUS
+   ========================================================= */
+
+.op-replay-status {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 10px 12px;
+
+    margin-top: 13px;
+
+    border-radius: 10px;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.7px;
+}
+
+
+.op-replay-status.live {
+
+    color: #75efab;
+
+    background:
+        rgba(55, 205, 120, 0.08);
+
+    border:
+        1px solid rgba(70, 220, 135, 0.16);
+}
+
+
+.op-replay-status.paused {
+
+    color: #ffc66d;
+
+    background:
+        rgba(255, 177, 55, 0.08);
+
+    border:
+        1px solid rgba(255, 177, 55, 0.15);
+}
+
+
+.op-replay-status.ready {
+
+    color: #aaaeba;
+
+    background:
+        rgba(255, 255, 255, 0.035);
+
+    border:
+        1px solid rgba(255, 255, 255, 0.06);
+}
+
+
+.op-status-dot {
+
+    width: 7px;
+    height: 7px;
+
+    border-radius: 50%;
+
+    background: currentColor;
+
+    box-shadow:
+        0 0 8px currentColor;
+}
+
+
+.op-replay-status.live .op-status-dot {
+
+    animation:
+        op-live-pulse 1.5s ease-in-out infinite;
+}
+
+
+/* =========================================================
+   SPEED
+   ========================================================= */
+
+.op-speed-label {
+
+    margin-top: 17px;
+
+    margin-bottom: 4px;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    color:
+        rgba(180, 184, 200, 0.55);
+}
+
+
+/* =========================================================
+   MATCH LIBRARY
+   ========================================================= */
+
+.op-match-count {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-top: 16px;
+
+    padding: 10px 12px;
+
+    border-radius: 10px;
+
+    background:
+        rgba(255, 255, 255, 0.025);
+}
+
+
+.op-match-count span {
+
+    font-size: 9px;
+
+    letter-spacing: 0.8px;
+
+    color:
+        rgba(190, 193, 204, 0.50);
+}
+
+
+.op-match-count strong {
+
+    font-size: 13px;
+
+    color: #d4c0ff;
+}
+
+
+/* =========================================================
+   PIPELINE
+   ========================================================= */
+
+.op-pipeline-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    padding: 9px 0;
+
+    border-bottom:
+        1px solid rgba(255, 255, 255, 0.035);
+}
+
+
+.op-pipeline-item:last-child {
+
+    border-bottom: none;
+}
+
+
+.op-pipeline-dot {
+
+    width: 7px;
+    height: 7px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background: #60e99d;
+
+    box-shadow:
+        0 0 7px rgba(96, 233, 157, 0.65);
+
+    animation:
+        op-live-pulse 2.2s ease-in-out infinite;
+}
+
+
+.op-pipeline-name {
+
+    flex: 1;
+
+    font-size: 11px;
+
+    color:
+        rgba(230, 232, 240, 0.70);
+}
+
+
+.op-pipeline-status {
+
+    font-size: 9px;
+
+    color:
+        rgba(96, 233, 157, 0.72);
+}
+
+
+/* =========================================================
+   SELECTBOX POLISH
+   ========================================================= */
+
+section[data-testid="stSidebar"] div[data-baseweb="select"] > div {
+
+    background:
+        rgba(255, 255, 255, 0.035);
+
+    border:
+        1px solid rgba(255, 255, 255, 0.09);
+
+    border-radius: 11px;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+section[data-testid="stSidebar"] div[data-baseweb="select"] > div:hover {
+
+    border-color:
+        rgba(151, 103, 255, 0.45);
+
+    box-shadow:
+        0 0 0 2px rgba(151, 103, 255, 0.05);
+}
+
+
+/* =========================================================
+   SIDEBAR BUTTONS
+   ========================================================= */
+
+section[data-testid="stSidebar"] button {
+
+    border-radius: 10px;
+
+    border:
+        1px solid rgba(255, 255, 255, 0.07);
+
+    background:
+        rgba(255, 255, 255, 0.035);
+
+    color:
+        rgba(240, 241, 247, 0.85);
+
+    transition:
+        all 0.18s ease;
+}
+
+
+section[data-testid="stSidebar"] button:hover {
+
+    border-color:
+        rgba(150, 102, 255, 0.38);
+
+    background:
+        rgba(150, 102, 255, 0.09);
+
+    transform:
+        translateY(-1px);
+}
+/* =========================================================
+   OVERPULSE PREMIUM HEADER
+   ========================================================= */
+
+.overpulse-header {
+    width: 100%;
+    margin-bottom: 28px;
+    padding: 26px 30px 0 30px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(28, 30, 42, 0.96),
+            rgba(14, 16, 24, 0.98)
+        );
+
+    border: 1px solid rgba(255, 255, 255, 0.07);
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 12px 40px rgba(0, 0, 0, 0.30);
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   TOP HEADER
+   ========================================================= */
+
+.overpulse-header-top {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+
+/* =========================================================
+   BRAND
+   ========================================================= */
+
+.overpulse-brand {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+
+.overpulse-logo {
+    width: 52px;
+
+    height: 52px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 28px;
+
+    border-radius: 14px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255, 105, 180, 0.18),
+            rgba(125, 82, 255, 0.20)
+        );
+
+    border: 1px solid rgba(255, 255, 255, 0.09);
+
+    box-shadow:
+        0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+
+.overpulse-title {
+    font-size: 30px;
+
+    font-weight: 800;
+
+    letter-spacing: -0.8px;
+
+    line-height: 1.05;
+
+    color: #f5f5f7;
+}
+
+
+.overpulse-subtitle {
+    margin-top: 5px;
+
+    font-size: 13px;
+
+    font-weight: 500;
+
+    letter-spacing: 0.2px;
+
+    color: rgba(255, 255, 255, 0.55);
+}
+
+
+/* =========================================================
+   LIVE STATUS
+   ========================================================= */
+
+.overpulse-status {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 8px 14px;
+
+    border-radius: 999px;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.8px;
+
+    backdrop-filter: blur(10px);
+}
+
+
+.overpulse-status.live {
+    color: #67f5a5;
+
+    background:
+        rgba(55, 210, 125, 0.10);
+
+    border:
+        1px solid rgba(55, 210, 125, 0.25);
+}
+
+
+.overpulse-status.completed {
+    color: #8ec5ff;
+
+    background:
+        rgba(70, 145, 255, 0.10);
+
+    border:
+        1px solid rgba(70, 145, 255, 0.25);
+}
+
+
+.overpulse-status.paused {
+    color: #ffd166;
+
+    background:
+        rgba(255, 209, 102, 0.10);
+
+    border:
+        1px solid rgba(255, 209, 102, 0.25);
+}
+
+
+.status-dot {
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   MATCH BAR
+   ========================================================= */
+
+.overpulse-match-bar {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr)
+        auto
+        auto;
+
+    align-items: center;
+
+    gap: 30px;
+
+    margin-top: 24px;
+
+    padding: 20px 0 22px;
+
+    border-top:
+        1px solid rgba(255, 255, 255, 0.07);
+}
+
+
+/* =========================================================
+   MATCH INFORMATION
+   ========================================================= */
+
+.match-label,
+.score-label {
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.2px;
+
+    color:
+        rgba(255, 255, 255, 0.40);
+
+    margin-bottom: 6px;
+}
+
+
+.match-name {
+    font-size: 17px;
+
+    font-weight: 650;
+
+    color: #f2f3f5;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+    max-width: 650px;
+}
+
+
+/* =========================================================
+   SCORE
+   ========================================================= */
+
+.match-score,
+.match-overs {
+    min-width: 100px;
+}
+
+
+.score-value {
+    font-size: 27px;
+
+    font-weight: 800;
+
+    line-height: 1;
+
+    color: #ffffff;
+}
+
+
+.overs-value {
+    font-size: 21px;
+
+    font-weight: 700;
+
+    line-height: 1;
+
+    color: rgba(255, 255, 255, 0.85);
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .overpulse-header {
+        padding: 20px;
+    }
+
+
+    .overpulse-header-top {
+        align-items: flex-start;
+    }
+
+
+    .overpulse-subtitle {
+        font-size: 11px;
+    }
+
+
+    .overpulse-match-bar {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    .match-information {
+        grid-column: 1 / -1;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .overpulse-header-top {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+
+    .overpulse-match-bar {
+        grid-template-columns: 1fr;
+    }
+
+
+    .match-score,
+    .match-overs {
+        min-width: auto;
+    }
+
+
+    .match-name {
+        max-width: 100%;
+    }
+
+}
+/* =========================================================
+   OVERPULSE — PREMIUM HEADER
+   ========================================================= */
+
+.overpulse-header {
+    width: 100%;
+    min-height: 92px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 18px 24px;
+
+    margin-bottom: 24px;
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    border-radius: 18px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(20, 20, 25, 0.96),
+            rgba(12, 12, 16, 0.98)
+        );
+
+    box-shadow:
+        0 12px 40px rgba(0, 0, 0, 0.28);
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+/* ---------------------------------------------------------
+   SUBTLE TOP LIGHT
+   --------------------------------------------------------- */
+
+.overpulse-header::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 1px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(255, 255, 255, 0.22),
+            transparent
+        );
+}
+
+
+/* ---------------------------------------------------------
+   LEFT SIDE
+   --------------------------------------------------------- */
+
+.header-left {
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    min-width: 0;
+}
+
+
+/* ---------------------------------------------------------
+   BRAND
+   --------------------------------------------------------- */
+
+.brand-row {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+.brand-mark {
+
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 11px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255, 255, 255, 0.12),
+            rgba(255, 255, 255, 0.04)
+        );
+
+    border:
+        1px solid rgba(255, 255, 255, 0.10);
+
+    font-size: 19px;
+
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+
+.brand-name {
+
+    font-size: 26px;
+
+    font-weight: 750;
+
+    letter-spacing: -0.7px;
+
+    color: #f5f5f7;
+}
+
+
+.brand-subtitle {
+
+    margin-top: 2px;
+
+    margin-left: 48px;
+
+    font-size: 12px;
+
+    font-weight: 500;
+
+    letter-spacing: 0.2px;
+
+    color: rgba(255, 255, 255, 0.48);
+}
+
+
+/* ---------------------------------------------------------
+   SELECTED MATCH
+   --------------------------------------------------------- */
+
+.header-match-title {
+
+    margin-top: 10px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    color: rgba(255, 255, 255, 0.88);
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+    max-width: 600px;
+}
+
+
+/* ---------------------------------------------------------
+   RIGHT SIDE
+   --------------------------------------------------------- */
+
+.header-right {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    margin-left: 24px;
+}
+
+
+/* ---------------------------------------------------------
+   STATUS
+   --------------------------------------------------------- */
+
+.header-status {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    padding: 7px 11px;
+
+    border-radius: 999px;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.7px;
+
+    background:
+        rgba(255, 255, 255, 0.05);
+
+    border:
+        1px solid rgba(255, 255, 255, 0.08);
+}
+
+
+.status-dot {
+
+    font-size: 10px;
+}
+
+
+/* LIVE */
+
+.status-live {
+
+    color: #7dffb2;
+
+    border-color:
+        rgba(125, 255, 178, 0.20);
+
+    background:
+        rgba(125, 255, 178, 0.06);
+}
+
+
+.status-live .status-dot {
+
+    animation:
+        livePulse 1.5s ease-in-out infinite;
+}
+
+
+/* COMPLETED */
+
+.status-completed {
+
+    color: #8fc7ff;
+
+    border-color:
+        rgba(143, 199, 255, 0.18);
+
+    background:
+        rgba(143, 199, 255, 0.06);
+}
+
+
+/* PAUSED */
+
+.status-paused {
+
+    color: #ffd580;
+
+    border-color:
+        rgba(255, 213, 128, 0.18);
+
+    background:
+        rgba(255, 213, 128, 0.06);
+}
+
+
+/* READY */
+
+.status-ready {
+
+    color: rgba(255, 255, 255, 0.60);
+
+    background:
+        rgba(255, 255, 255, 0.04);
+}
+
+
+/* ---------------------------------------------------------
+   SCORE
+   --------------------------------------------------------- */
+
+.header-score {
+
+    display: flex;
+
+    align-items: baseline;
+
+    gap: 3px;
+
+    padding-left: 4px;
+}
+
+
+.score-value {
+
+    font-size: 24px;
+
+    font-weight: 750;
+
+    letter-spacing: -0.8px;
+
+    color: #ffffff;
+}
+
+
+.score-separator {
+
+    font-size: 18px;
+
+    color: rgba(255, 255, 255, 0.35);
+}
+
+
+.wicket-value {
+
+    font-size: 18px;
+
+    font-weight: 650;
+
+    color: rgba(255, 255, 255, 0.65);
+}
+
+
+/* ---------------------------------------------------------
+   OVERS
+   --------------------------------------------------------- */
+
+.header-overs {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-end;
+
+    gap: 1px;
+}
+
+
+.overs-label {
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.8px;
+
+    color: rgba(255, 255, 255, 0.35);
+}
+
+
+.overs-value {
+
+    font-size: 15px;
+
+    font-weight: 650;
+
+    color: rgba(255, 255, 255, 0.88);
+}
+
+
+/* ---------------------------------------------------------
+   LIVE PULSE
+   --------------------------------------------------------- */
+
+@keyframes livePulse {
+
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.45;
+        transform: scale(0.78);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+/* ---------------------------------------------------------
+   RESPONSIVE
+   --------------------------------------------------------- */
+
+@media (max-width: 900px) {
+
+    .overpulse-header {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 16px;
+    }
+
+    .header-right {
+
+        width: 100%;
+
+        justify-content: flex-start;
+
+        margin-left: 0;
+
+        flex-wrap: wrap;
+    }
+
+    .brand-subtitle {
+
+        margin-left: 0;
+    }
+
+    .header-match-title {
+
+        max-width: 100%;
+    }
+}
+/* =========================================================
+   OVERPULSE SIDEBAR
+   ========================================================= */
+
+section[data-testid="stSidebar"] {
+
+    background:
+        linear-gradient(
+            180deg,
+            #0b0b0f 0%,
+            #0f0f14 55%,
+            #0b0b0f 100%
+        );
+
+    border-right:
+        1px solid rgba(255,255,255,0.07);
+}
+
+
+/* ---------------------------------------------------------
+   BRAND
+   --------------------------------------------------------- */
+
+.sidebar-brand {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+
+    padding: 8px 4px 4px 4px;
+}
+
+
+.sidebar-logo {
+
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background:
+        rgba(255,255,255,0.06);
+
+    border:
+        1px solid rgba(255,255,255,0.09);
+
+    font-size: 20px;
+}
+
+
+.sidebar-title {
+
+    font-size: 19px;
+
+    font-weight: 750;
+
+    letter-spacing: -0.4px;
+
+    color: #f5f5f7;
+}
+
+
+.sidebar-subtitle {
+
+    font-size: 10px;
+
+    color:
+        rgba(255,255,255,0.42);
+
+    margin-top: 1px;
+
+    letter-spacing: 0.3px;
+}
+
+
+/* ---------------------------------------------------------
+   DIVIDER
+   --------------------------------------------------------- */
+
+.sidebar-divider {
+
+    height: 1px;
+
+    width: 100%;
+
+    margin: 17px 0;
+
+    background:
+        rgba(255,255,255,0.07);
+}
+
+
+/* ---------------------------------------------------------
+   SECTION TITLE
+   --------------------------------------------------------- */
+
+.sidebar-section-title {
+
+    font-size: 10px;
+
+    font-weight: 750;
+
+    letter-spacing: 1.2px;
+
+    color:
+        rgba(255,255,255,0.36);
+
+    margin:
+
+        4px 0
+
+        9px 2px;
+}
+
+
+/* ---------------------------------------------------------
+   SELECT BOX
+   --------------------------------------------------------- */
+
+section[data-testid="stSidebar"]
+div[data-baseweb="select"] > div {
+
+    background:
+        rgba(255,255,255,0.045);
+
+    border:
+        1px solid rgba(255,255,255,0.09);
+
+    border-radius: 11px;
+
+    transition:
+        border-color 0.2s ease,
+        background 0.2s ease;
+}
+
+
+section[data-testid="stSidebar"]
+div[data-baseweb="select"] > div:hover {
+
+    background:
+        rgba(255,255,255,0.065);
+
+    border-color:
+        rgba(255,255,255,0.16);
+}
+
+
+/* ---------------------------------------------------------
+   SELECTED MATCH CARD
+   --------------------------------------------------------- */
+
+.selected-match-card {
+
+    margin-top: 13px;
+
+    padding: 13px;
+
+    border-radius: 13px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,255,255,0.055),
+            rgba(255,255,255,0.025)
+        );
+
+    border:
+        1px solid rgba(255,255,255,0.08);
+}
+
+
+.selected-match-label {
+
+    font-size: 8px;
+
+    font-weight: 750;
+
+    letter-spacing: 1px;
+
+    color:
+        rgba(255,255,255,0.32);
+}
+
+
+.selected-match-teams {
+
+    margin-top: 7px;
+
+    font-size: 13px;
+
+    line-height: 1.45;
+
+    font-weight: 650;
+
+    color:
+        rgba(255,255,255,0.88);
+}
+
+
+.selected-match-teams span {
+
+    margin: 0 4px;
+
+    color:
+        rgba(255,255,255,0.28);
+}
+
+
+.selected-match-id {
+
+    margin-top: 7px;
+
+    font-size: 9px;
+
+    color:
+        rgba(255,255,255,0.30);
+}
+
+
+.selected-match-result {
+
+    margin-top: 8px;
+
+    padding-top: 8px;
+
+    border-top:
+        1px solid rgba(255,255,255,0.06);
+
+    font-size: 10px;
+
+    color:
+        rgba(255,255,255,0.60);
+}
+
+
+/* ---------------------------------------------------------
+   BUTTONS
+   --------------------------------------------------------- */
+
+section[data-testid="stSidebar"]
+button {
+
+    border-radius: 9px !important;
+
+    border:
+        1px solid rgba(255,255,255,0.08) !important;
+
+    background:
+        rgba(255,255,255,0.045) !important;
+
+    transition:
+        transform 0.15s ease,
+        background 0.15s ease,
+        border-color 0.15s ease !important;
+}
+
+
+section[data-testid="stSidebar"]
+button:hover {
+
+    transform: translateY(-1px);
+
+    background:
+        rgba(255,255,255,0.075) !important;
+
+    border-color:
+        rgba(255,255,255,0.15) !important;
+}
+
+
+/* ---------------------------------------------------------
+   SYSTEM STATUS
+   --------------------------------------------------------- */
+
+.sidebar-system-item {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 7px 4px;
+
+    font-size: 11px;
+
+    color:
+        rgba(255,255,255,0.55);
+}
+
+
+.system-dot {
+
+    font-size: 7px;
+
+    color: #76e6a5;
+}
+
+
+/* ---------------------------------------------------------
+   FOOTER
+   --------------------------------------------------------- */
+
+.sidebar-footer {
+
+    margin-top: 28px;
+
+    padding-top: 14px;
+
+    border-top:
+        1px solid rgba(255,255,255,0.06);
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    color:
+        rgba(255,255,255,0.32);
+}
+
+
+.sidebar-footer span {
+
+    display: block;
+
+    margin-top: 4px;
+
+    font-size: 9px;
+
+    font-weight: 400;
+
+    letter-spacing: 0;
+
+    color:
+        rgba(255,255,255,0.22);
+}
+/* =========================================================
+   OVERPULSE REPLAY
+   ========================================================= */
+
+.replay-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-top: 12px;
+
+    margin-bottom: 8px;
+}
+
+
+.replay-label {
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.2px;
+
+    color:
+        rgba(255,255,255,0.38);
+}
+
+
+.replay-counter {
+
+    margin-left: 10px;
+
+    font-size: 11px;
+
+    color:
+        rgba(255,255,255,0.58);
+}
+
+
+.replay-percent {
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    color:
+        rgba(255,255,255,0.62);
+}
+
+
+.replay-track {
+
+    width: 100%;
+
+    height: 3px;
+
+    overflow: hidden;
+
+    border-radius: 10px;
+
+    background:
+        rgba(255,255,255,0.07);
+}
+
+
+.replay-progress {
+
+    height: 100%;
+
+    border-radius: 10px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #7c5cff,
+            #4fd1c5
+        );
+
+    transition:
+        width 0.45s ease;
+}
+/* ============================================================
+   OVERPULSE — LIVE MATCH HEADER
+   ============================================================ */
+
+.op-live-header {
+
+    position: relative;
+
+    margin-top: 18px;
+    margin-bottom: 22px;
+
+    padding: 26px 30px;
+
+    border-radius: 22px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(25, 25, 38, 0.98),
+            rgba(15, 15, 25, 0.98)
+        );
+
+    border:
+        1px solid rgba(255,255,255,0.08);
+
+    box-shadow:
+        0 18px 50px rgba(0,0,0,0.28);
+
+    overflow: hidden;
+}
+
+
+.op-live-header::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 2px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            #7c5cff,
+            #4fd1c5,
+            transparent
+        );
+
+    opacity: 0.9;
+}
+
+
+/* ============================================================
+   TOP
+   ============================================================ */
+
+.op-header-top {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-start;
+
+    margin-bottom: 28px;
+}
+
+
+.op-match-label {
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+    text-transform: uppercase;
+
+    color:
+        rgba(255,255,255,0.42);
+
+    margin-bottom: 8px;
+}
+
+
+.op-teams {
+
+    font-size: 22px;
+
+    font-weight: 800;
+
+    letter-spacing: -0.5px;
+
+    color: #ffffff;
+}
+
+
+.op-vs {
+
+    margin:
+        0 9px;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    color:
+        rgba(255,255,255,0.3);
+}
+
+
+/* ============================================================
+   LIVE STATUS
+   ============================================================ */
+
+.op-live-status {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    padding:
+        7px 12px;
+
+    border-radius: 999px;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+
+    color: #ffffff;
+
+    background:
+        rgba(79,209,197,0.08);
+
+    border:
+        1px solid rgba(79,209,197,0.18);
+}
+
+
+.op-live-dot {
+
+    width: 7px;
+    height: 7px;
+
+    border-radius: 50%;
+
+    background: #4fd1c5;
+
+    box-shadow:
+        0 0 0 4px
+        rgba(79,209,197,0.10);
+
+    animation:
+        op-live-pulse 1.8s infinite;
+}
+
+
+@keyframes op-live-pulse {
+
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.45;
+        transform: scale(0.8);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+/* ============================================================
+   SCORE AREA
+   ============================================================ */
+
+.op-score-area {
+
+    display: grid;
+
+    grid-template-columns:
+        2fr 1fr 1fr;
+
+    gap: 20px;
+
+    align-items: center;
+
+    padding:
+        20px 0;
+
+    border-top:
+        1px solid
+        rgba(255,255,255,0.06);
+
+    border-bottom:
+        1px solid
+        rgba(255,255,255,0.06);
+}
+
+
+.op-batting-team {
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+
+    color:
+        rgba(255,255,255,0.45);
+
+    margin-bottom: 4px;
+}
+
+
+.op-score {
+
+    font-size: 46px;
+
+    line-height: 1;
+
+    font-weight: 900;
+
+    letter-spacing: -2px;
+
+    color: #ffffff;
+}
+
+
+.op-wickets {
+
+    font-size: 25px;
+
+    font-weight: 700;
+
+    color:
+        rgba(255,255,255,0.45);
+}
+
+
+/* ============================================================
+   OVER
+   ============================================================ */
+
+.op-over-block,
+.op-delivery-block {
+
+    padding-left: 20px;
+
+    border-left:
+        1px solid
+        rgba(255,255,255,0.07);
+}
+
+
+.op-over-label,
+.op-delivery-label {
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.3px;
+
+    color:
+        rgba(255,255,255,0.35);
+
+    margin-bottom: 6px;
+}
+
+
+.op-over-number {
+
+    font-size: 27px;
+
+    font-weight: 800;
+
+    color: #ffffff;
+}
+
+
+.op-innings {
+
+    margin-top: 3px;
+
+    font-size: 10px;
+
+    color:
+        rgba(255,255,255,0.35);
+}
+
+
+/* ============================================================
+   DELIVERY
+   ============================================================ */
+
+.op-delivery-result {
+
+    font-size: 21px;
+
+    font-weight: 800;
+
+    color: #4fd1c5;
+}
+
+
+/* ============================================================
+   PLAYERS
+   ============================================================ */
+
+.op-player-row {
+
+    display: flex;
+
+    gap: 50px;
+
+    margin-top: 20px;
+}
+
+
+.op-player {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+.op-player-icon {
+
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+
+    background:
+        rgba(255,255,255,0.05);
+
+    font-size: 13px;
+}
+
+
+.op-player-label {
+
+    font-size: 8px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    color:
+        rgba(255,255,255,0.3);
+}
+
+
+.op-player-name {
+
+    margin-top: 2px;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    color:
+        rgba(255,255,255,0.85);
+}
+
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+
+@media (max-width: 800px) {
+
+    .op-score-area {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .op-over-block,
+    .op-delivery-block {
+
+        padding-left: 0;
+
+        border-left: none;
+
+        border-top:
+            1px solid
+            rgba(255,255,255,0.06);
+
+        padding-top: 15px;
+
+    }
+
+    .op-player-row {
+
+        flex-direction: column;
+
+        gap: 15px;
+
+    }
+}
+
+
+/* ===========================
+   HIDE EMPTY SLIDER & PROGRESS LABELS
+   (removes blank line above controls)
+=========================== */
+
+/* Slider: hide the label span so no blank line appears */
+div[data-testid="stSlider"] > label,
+div[data-testid="stSlider"] > div > label {
+    display: none !important;
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Progress bar: hide Streamlit's auto-generated empty label */
+div[data-testid="stProgressBar"] > label,
+div[data-testid="stProgressBar"] > div > label {
+    display: none !important;
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+div[data-testid="stProgressBar"] {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+/* Remove Streamlit's default top padding on slider container */
+div[data-testid="stSlider"] {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+}
+
+/* ===========================
+   REMOVE WHITE LINE AT TOP
+   (Streamlit's default header/toolbar area)
+=========================== */
+
+/* Hide the Streamlit top toolbar / header bar that appears as a
+   white or light grey strip at the very top of the page */
+header[data-testid="stHeader"] {
+    background: transparent !important;
+    border-bottom: none !important;
+    height: 0 !important;
+    min-height: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* Streamlit adds a top padding to the main block to accommodate
+   the header. Remove it so nothing appears above our content. */
+div[data-testid="stAppViewBlockContainer"],
+.block-container,
+section.main > div {
+    padding-top: 1rem !important;
+    margin-top: 0 !important;
+}
+
+/* The deploy button area / main menu top spacer */
+div[data-testid="stDecoration"] {
+    display: none !important;
+    height: 0 !important;
+}
+
+/* Toolbar strip */
+div[data-testid="stToolbar"] {
+    top: 0 !important;
+    background: transparent !important;
+}
+
+
+/* ===========================
+   RADIO BUTTON VISIBILITY
+   (Player Analytics scope toggle)
+=========================== */
+
+/* Group label: "Analytics Data Scope:" */
+div[data-testid="stRadio"] > label,
+div[data-testid="stRadio"] label[data-testid="stWidgetLabel"],
+div[data-testid="stRadio"] > div > label {
+    color: #CBD5E1 !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.3px !important;
+}
+
+/* Individual option text: "Selected Match", "Entire Database…" */
+div[data-testid="stRadio"] label span,
+div[data-testid="stRadio"] div[role="radio"] span,
+div[data-testid="stRadio"] p {
+    color: #E2E8F0 !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+}
+
+/* Highlight the selected option in green */
+div[data-testid="stRadio"] label:has(input:checked) span,
+div[data-testid="stRadio"] div[role="radio"][aria-checked="true"] span {
+    color: #00FF9D !important;
+    font-weight: 600 !important;
+}
